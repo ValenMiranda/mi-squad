@@ -1,15 +1,19 @@
-function MiembroSquad(nombre,apellido,edad,hobbieUno,hobbieDos,hobbieTres){
-	this.nombre = nombre;
-	this.apellido = apellido;
+function MiembroSquad(nombreApellido,edad,hobbies){
+	this.nombreApellido = nombreApellido;
 	this.edad = edad;
-	this.hobbieUno = hobbieUno;
-	this.hobbieDos = hobbieDos;
-	this.hobbieTres = hobbieTres;
+	this.hobbieUno = hobbies;
 }
 
-const fena = new MiembroSquad("Fernanda","Zamora",30,"escuchar música","tomar fotografías","pensar en el existencialismo");
-const cindi = new MiembroSquad("Cindialy","Berrios",23,"trekking","escuchar música","deportes");
-const espe = new MiembroSquad("Esperanza","Lucero",25,"fotografía","leer","dormir");
-const diana = new MiembroSquad("Diana","Villasmil",29,"cantar","ver series coreanas","leer");
+var arr = [
+	new MiembroSquad("Fernanda Zamora",30,["escuchar música","tomar fotografías","pensar en el existencialismo"]),
+	new MiembroSquad("Cindialy Berrios",23,["trekking","escuchar música","deportes"]),
+	new MiembroSquad("Esperanza Lucero",25,["fotografía","leer","dormir"]),
+	new MiembroSquad("Diana Villasmil",29,["cantar","ver series coreanas","leer"]),
+	new MiembroSquad("Natalia Villalobos",29,["Ver series Coreanas", "Cantar", "Escuchar música"])
 
-document.getElementById("miembro").innerHTML += ("Nombre: " + this.nombre + " " + this.apellido + "<br>" + "Edad: " + this.edad + "<br>Hobbies: <li>" + this.hobbieUno + this.hobbieDos + this.hobbieTres + "</li>");
+];
+
+var miembro = document.getElementById("miembro");
+arr.forEach(function(elemento){
+	
+})
